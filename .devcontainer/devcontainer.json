@@ -1,0 +1,35 @@
+{
+    "name": "multimatics-dev",
+    "service": "multimatics-devel",
+    "dockerComposeFile": "../docker-compose.devel.yaml",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker": {}
+    },
+    "workspaceFolder": "/home/root/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/root/workspace,type=bind",
+    "containerEnv": {
+        "TZ": "Asia/Jakarta"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "ms-vscode.vscode-typescript-next",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "bradlc.vscode-tailwindcss",
+                "astro-build.astro-vscode",
+                "expo.vscode-expo-tools",
+                "msjsdiag.vscode-react-native",
+                "Prisma.prisma",
+                "ritwickdey.LiveServer",
+                "ms-vscode.makefile-tools",
+                "eamodio.gitlens",
+                "redhat.vscode-yaml",
+                "yzhang.markdown-all-in-one",
+                "GitHub.vscode-pull-request-github",
+                "Codeium.codeium"
+            ]
+        }
+    }
+}
